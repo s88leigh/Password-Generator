@@ -6,41 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+   
   </head>
-  <!-- * Length (must be between 8 and 128 characters) -->
-      <!-- * Character type: -->
 
-  <!-- * Special characters ([see examples](https://www.owasp.org/index.php/Password_special_characters))
+<body>
+ 
+  <div class="wrapper">
+      <section id="box">
+        <header>
+          <h1>Password Generator</h1>
+        </header>
 
-  * Numeric characters
-
-  * Lowercase characters
-
-  * Uppercase characters -->
-  <body>
-      
-    <script>
-      var num=Math.floor(Math.random()) +1;
-      console.log(num);
-      
-      </script>
-  <section id="box">
-    <header>
-      <h1>Password Generator</h1>
-    </header>
-    <article id="inner-box">
-    <h2>Generate a Password</h2>
-    <textarea
-      readonly
-      id="password"
-      placeholder="Your Secure Password"
-      aria-label="Generated Password"
-    ></textarea>
-    <button id="generate">Generate Password</button>
-    <button id="copy">
-      Copy to Clipboard
-    </button>
-  </article>
-  </section>
+        <div id="inner-box">
+           <div id="criteria">
+             <h3>Password Criteria</h3>
+                <li>Length must be between 8 and 128 character</li>
+                <li>At least 1 Special Characters</li>
+                <li>At least 1 Numeric Characters</li>
+                <li>At least 1 Lowercase Letters</li>
+                <li>At least 1 Uppercase Letters</li>
+              </div>
+            <p id="message"></p>
+         
+            <br>
+            <input type="text" id="display" >
+            
+             <br>
+             
+              <button onclick="checkPassword()" id="generate">generate</button>
+              <button onclick="copyPassword()" id="copy"> Copy to Clipboard</button>
+            </div>
+      </section>
+    </div>
+    <script src="password.js"></script>
   </body>
 </html>
