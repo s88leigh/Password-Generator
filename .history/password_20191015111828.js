@@ -1,6 +1,6 @@
 
 
-function generate(length){
+function generate(CharactersLength){
    
     var result = " ";
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -12,7 +12,7 @@ function generate(length){
     return result;
 }
  
-  console.log(generate());
+  console.log(generate(8));
 //  trying to attach button to display screen.
  button.addEventListener("click", checkPassword())
 

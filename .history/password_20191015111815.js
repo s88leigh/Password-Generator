@@ -12,7 +12,7 @@ function generate(length){
     return result;
 }
  
-  console.log(generate());
+  console.log(generate(8));
 //  trying to attach button to display screen.
  button.addEventListener("click", checkPassword())
 

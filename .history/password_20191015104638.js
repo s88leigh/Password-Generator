@@ -1,7 +1,7 @@
 
 
-function generate(length){
-   
+function generate(length) {
+
     var result = " ";
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     var charactersLength = characters.length;
@@ -10,19 +10,15 @@ function generate(length){
        result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     return result;
-}
- 
-  console.log(generate());
-//  trying to attach button to display screen.
- button.addEventListener("click", checkPassword())
+ }
 
- document.getElementById("display").addEventListener("click", checkPassword);
+ document.getElementById("demo").addEventListener("click", myFunction);
 
  function checkPassword() {
-    document.getElementById("display").innerHTML = " ";
+    document.getElementById("display").innerHTML = "";
   }
  
+ console.log(generate(8));
+ btn.addEventListener("click", checkPassword())
 
-
-
-
+</script>
